@@ -2,11 +2,13 @@
   "name": "chat-app",
   "version": "1.0.0",
   "description": "A real-time chat application",
-  "main": "src/main.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node api/index.js",
-    "dev": "node src/server.js",
-    "build": "echo 'Static files in public/ directory are ready for deployment'",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node src/app.js",
+    "dev:server": "node src/server.js",
     "test": "echo 'No tests specified yet'"
   },
   "keywords": [
@@ -23,7 +25,8 @@
     "socket.io": "^4.7.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "vite": "^7.1.7"
   },
   "engines": {
     "node": ">=16.0.0"

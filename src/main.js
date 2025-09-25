@@ -1,8 +1,5 @@
-const app = require('../api/index.js');
+import './assets/styles.css';
+import './client-api.js';
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-    console.log(`Chat API server running on port ${PORT}`);
-    console.log(`Visit http://localhost:${PORT} to start chatting!`);
-});
+// Initialize the app
+console.log('Chat App loaded with Vite!');

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Chat App</h1>
+            <div class="user-info">
+                <span id="username">Anonymous</span>
+                <button id="logout-btn" class="btn-secondary">Logout</button>
+            </div>
+        </header>
+
+        <div class="chat-main">
+            <div class="sidebar">
+                <h3>Online Users</h3>
+                <ul id="users-list">
+                    <!-- Users will be populated here -->
+                </ul>
+            </div>
+
+            <div class="chat-area">
+                <div class="messages-container" id="messages">
+                    <!-- Messages will be displayed here -->
+                </div>
+
+                <form class="message-form" id="message-form">
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="message-input" 
+                            placeholder="Type your message here..." 
+                            autocomplete="off"
+                            required
+                        >
+                        <button type="submit" class="btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>Join the Chat</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username-input">Enter your username:</label>
+                    <input 
+                        type="text" 
+                        id="username-input" 
+                        placeholder="Your username" 
+                        required
+                        minlength="2"
+                        maxlength="20"
+                    >
+                </div>
+                <button type="submit" class="btn-primary">Join Chat</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Vite entry point -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
