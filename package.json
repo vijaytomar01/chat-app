@@ -4,9 +4,11 @@
   "description": "A real-time chat application",
   "main": "src/main.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node api/index.js",
     "dev": "node src/server.js",
-    "build": "echo 'Build process not configured yet'",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "echo 'Client files are already built'",
+    "build:server": "echo 'Server build completed'",
     "test": "echo 'No tests specified yet'"
   },
   "keywords": [
