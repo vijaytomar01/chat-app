@@ -6,9 +6,7 @@
   "scripts": {
     "start": "node api/index.js",
     "dev": "node src/server.js",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "echo 'Client files are already built'",
-    "build:server": "echo 'Server build completed'",
+    "build": "echo 'Static files in public/ directory are ready for deployment'",
     "test": "echo 'No tests specified yet'"
   },
   "keywords": [
